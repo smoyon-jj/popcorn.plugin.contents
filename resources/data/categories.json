@@ -1,0 +1,22 @@
+[
+    {
+        "category": "internet",
+        "description": "Internet.",
+        "background": "special://skin/extras/backgrounds/internet.png"
+    },
+    {
+        "category": "radio",
+        "description": "Plateforme de radio.",
+        "background": "special://skin/extras/backgrounds/music.png"
+    },    
+    {
+        "category": "apps",
+        "description": "Applications.",
+        "background": "special://skin/extras/backgrounds/android.png"
+    },    
+    {
+        "category": "vodmusic",
+        "description": "Écoutez de la musique.",
+        "background": "special://skin/extras/backgrounds/music.png"
+    }
+]

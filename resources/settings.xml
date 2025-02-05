@@ -1,0 +1,8 @@
+<settings>
+    
+    <category label="Paramètres généraux">
+		<setting id="resources_file_path" type="text" label="Chemin du fichier JSON" default="special://home/addons/popcorn.plugin.contents/resources/data/contents.json" />
+		<setting id="categories_file_path" type="text" label="Chemin du fichier JSON" default="special://home/addons/popcorn.plugin.contents/resources/data/categories.json" />
+    </category>
+	
+</settings>

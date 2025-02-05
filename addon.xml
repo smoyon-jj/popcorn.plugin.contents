@@ -1,0 +1,15 @@
+<addon id="popcorn.plugin.contents" name="Jane Jobs Contents" version="1.0.0" provider-name="Jane Jobs">
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Jane Jobs Contents: Access your contents</summary>
+        <description lang="en">A plugin to display and access a list of websites with logos and descriptions.</description>
+        <language>en</language>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.png</fanart>
+        </assets>	
+    </extension>
+</addon> 
