@@ -16,27 +16,28 @@ msgstr ""
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgctxt "#60000"
+
+msgctxt "#62000"
 msgid "Google"
 msgstr "Google"
 
-msgctxt "#60001"
-msgid "The most popular search engine."
-msgstr "Die beliebteste Suchmaschine."
+msgctxt "#62001"
+msgid "Le moteur de recherche le plus populaire."
+msgstr "Der Motor ist am beliebtesten."
 
-msgctxt "#60002"
+msgctxt "#62002"
 msgid "Wikipedia"
 msgstr "Wikipedia"
 
-msgctxt "#60003"
-msgid "The free encyclopedia, powered by contributions."
-msgstr "Die freie Enzyklopädie, angetrieben durch Beiträge."
+msgctxt "#62003"
+msgid "L'encyclopédie libre, alimentée par les contributions."
+msgstr "Die kostenlose Enzyklopädie, ernährt von den Beiträgen."
 
-msgctxt "#60004"
+msgctxt "#62004"
 msgid "YouTube"
 msgstr "YouTube"
 
-msgctxt "#60005"
-msgid "Video sharing platform."
-msgstr "Video-Sharing-Plattform."
+msgctxt "#62005"
+msgid "Plateforme de partage de vidéos."
+msgstr "Plattenform zum Teilen von Videos."
 

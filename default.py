@@ -30,23 +30,27 @@ def load_resources_from_json(file_path, file_path_local):
             file_path = xbmcvfs.translatePath(file_path)
             file_path_local = xbmcvfs.translatePath(file_path_local)
             
-            # Créer le dossier cible si nécessaire
-            destination_dir = os.path.dirname(file_path_local)
-            if not os.path.exists(destination_dir):
-                os.makedirs(destination_dir)
+            #si le fichier local existe déjà, on ne fait rien
+            if not os.path.exists(file_path_local):
+                # Créer le dossier cible si nécessaire
+                destination_dir = os.path.dirname(file_path_local)
+                xbmcgui.Dialog().notification("Erreur", f"le Fichier JSON destintation est : {str(file_path_local)}", xbmcgui.NOTIFICATION_ERROR, 5000)
+                if not os.path.exists(destination_dir):
+                    os.makedirs(destination_dir)
 
-            # Vérifier si la source est une URL
-            if file_path.startswith("http://") or file_path.startswith("https://"):
-                # Télécharger le fichier depuis l'URL
-                urllib.request.urlretrieve(file_path, file_path_local)
-            else:
-                if not os.path.exists(file_path):
-                    xbmcgui.Dialog().notification("Erreur", f"Fichier JSON introuvable : {str(file_path)}", xbmcgui.NOTIFICATION_ERROR, 5000)
-                    return []
-        
-                # Copier le fichier vers l'emplacement donné
-                #if not file_path == file_path_local:
-                shutil.copy(file_path, file_path_local)
+                # Vérifier si la source est une URL
+                if file_path.startswith("http://") or file_path.startswith("https://"):
+                    # Télécharger le fichier depuis l'URL
+                    urllib.request.urlretrieve(file_path, file_path_local)
+                else:
+                    if not os.path.exists(file_path):
+                        xbmcgui.Dialog().notification("Erreur", f"Fichier JSON introuvable : {str(file_path)}", xbmcgui.NOTIFICATION_ERROR, 5000)
+                        return []
+            
+                    # Copier le fichier vers l'emplacement donné
+                    #if not file_path == file_path_local:
+                    shutil.copy(file_path, file_path_local)
+
 
         # Charger le fichier JSON local        
         with open(file_path_local, 'r', encoding='utf-8') as file:
@@ -114,7 +118,8 @@ def list_contents(filter_category=None):
             
             filtered_contents = contents if filter_category is None else [res for res in contents if res.get("category") == filter_category]
             for content in filtered_contents:
-                list_item = xbmcgui.ListItem(label=content['title'])
+                trad = addon.getLocalizedString(content['title'])
+                list_item = xbmcgui.ListItem(label=trad)
                 list_item.setArt({'icon': content['image']})
                 list_item.setArt({'thumb': content['image']})
                 list_item.setArt({'fanart': background_path})
@@ -131,12 +136,14 @@ def list_contents(filter_category=None):
 
                 info_tag = list_item.getVideoInfoTag()
                 info_tag.setMediaType('movie')
-                info_tag.setTitle(content['title'])
-                info_tag.setPlot($LOCALIZE[content['description']])
+                trad = addon.getLocalizedString(content['title'])
+                info_tag.setTitle(trad)
+                trad = addon.getLocalizedString(content['description'])
+                info_tag.setPlot(trad)
                 info_tag.setGenres([content['type']])
                 
                 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=list_item, isFolder=False)
-                xbmc.executebuiltin('Container.SetViewMode(55)')
+                xbmc.executebuiltin('Container.SetViewMode(51)')
 
             xbmcplugin.endOfDirectory(addon_handle)
 

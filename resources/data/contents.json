@@ -2,8 +2,8 @@
     {
         "category": "internet",
         "type": "link",
-        "title": "Google",
-        "description": "Le moteur de recherche le plus populaire.",
+        "title": 60000,
+        "description": 60001,
         "image": "https://raw.githubusercontent.com/smassot-jj/playlist.popcorn/refs/heads/main/internet-logos/google-int.png",
         "package": "de.ozerov.fully",
         "intent": "android.intent.action.VIEW",
@@ -12,28 +12,28 @@
     {
         "category": "internet",
         "type": "link",
-        "title": "Wikipedia",
-        "description": "L'encyclopédie libre, alimentée par les contributions.",
+        "title": 60002,
+        "description": 60003,
         "image": "https://raw.githubusercontent.com/smassot-jj/playlist.popcorn/refs/heads/main/internet-logos/wikipedia-int.png",
         "package": "de.ozerov.fully",
         "intent": "android.intent.action.VIEW",
-        "dataURI" : "https://www.wikipedia.org"
+        "dataURI": "https://www.wikipedia.org"
     },
     {
         "category": "internet",
         "type": "link",
-        "title": "YouTube",
-        "description": "Plateforme de partage de vidéos.",
+        "title": 60004,
+        "description": 60005,
         "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png",
         "package": "de.ozerov.fully",
         "intent": "android.intent.action.VIEW",
-        "dataURI" : "https://www.youtube.com"
-    },    
+        "dataURI": "https://www.youtube.com"
+    },
     {
         "category": "internet",
         "type": "link",
-        "title": "Amazon",
-        "description": "Achat et vente en ligne parmi des millions de produits en stock.",
+        "title": 60004,
+        "description": 60005,
         "image": "https://raw.githubusercontent.com/smassot-jj/playlist.popcorn/refs/heads/main/internet-logos/amazon-int.png",
         "package": "de.ozerov.fully",
         "intent": "android.intent.action.VIEW",
