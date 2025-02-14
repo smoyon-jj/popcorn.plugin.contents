@@ -1,0 +1,42 @@
+# XBMC Media Center language file
+# Addon Name: Eminence 2
+# Addon id: skin.eminence.2
+# Addon Provider: jurialmunkey
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Main\n"
+"Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: German (http://www.transifex.com/projects/p/xbmc-main/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#60000"
+msgid "Google"
+msgstr "Google"
+
+msgctxt "#60001"
+msgid "The most popular search engine."
+msgstr "Die beliebteste Suchmaschine."
+
+msgctxt "#60002"
+msgid "Wikipedia"
+msgstr "Wikipedia"
+
+msgctxt "#60003"
+msgid "The free encyclopedia, powered by contributions."
+msgstr "Die freie Enzyklopädie, angetrieben durch Beiträge."
+
+msgctxt "#60004"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "#60005"
+msgid "Video sharing platform."
+msgstr "Video-Sharing-Plattform."
+

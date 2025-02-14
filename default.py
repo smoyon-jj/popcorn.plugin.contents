@@ -132,7 +132,7 @@ def list_contents(filter_category=None):
                 info_tag = list_item.getVideoInfoTag()
                 info_tag.setMediaType('movie')
                 info_tag.setTitle(content['title'])
-                info_tag.setPlot(content['description'])
+                info_tag.setPlot($LOCALIZE[content['description']])
                 info_tag.setGenres([content['type']])
                 
                 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=list_item, isFolder=False)
